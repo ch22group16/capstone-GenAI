@@ -12,5 +12,20 @@ The dataset is annotated Enron Subject Line Corpus. It has dev, test, and train 
 * Average email length: 75 words
 * Average subject length: 4 words
 
-Dev and test datasets has @subject, @ann0,@ann1,@ann2 to represent subject lines of the mail. 
+Dev and test datasets has @subject, @ann0,@ann1,@ann2 to represent subject lines of the mail.   
 Train dataset has @subject to represent subject line. 
+
+# Data preprocessing
+
+We have considered below points to preprocess the data. 
+* Removed unnecessary spaces with single space.
+* Removed non-word and non-space character.
+* Extracted the content before @subject as email_body
+* Extracted @subject as subject_line, @ann0 as subject_line1, @ann1 as subject_line2, and @ann2 as subject_line3.
+* Created a single data file for dev, test, and train data with columns as email_body, subject_line, subject_line1, subject_line2, subject_line3 contents.
+
+We have analyzed the email body. The average email body has 2500 characters.  
+To train the dataset, we have considered first 2500 characters of email body only from each email.
+
+# Model Training
+
