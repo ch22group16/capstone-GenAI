@@ -34,9 +34,9 @@ We have applied zero shot learning from test data. The result was not accurate.
 
 # Model Training
 We have used the below models to train and test the data.
-** Facebook BART
-** Google T5
-** Chat-GPT2
-** Huggig Face DistilGPT
+* Facebook BART
+* Google T5
+* Chat-GPT2
+* Huggig Face DistilGPT
 
 
