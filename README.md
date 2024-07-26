@@ -55,3 +55,17 @@ The comparison of the Rouge score of each model is
 | T5 Small    | 0.27557781919299007   | 0.13223830150238886   |0.26705263028546283   |
 | Distil GPT2    | 0.10658709214367193   | 0.041839523780108655   |0.10234448377437692   |
 | GPT2    | Data 3   | Data 4   |Data 4   |
+
+# Model Weights
+We have saved the the model weights in Hugging Face Spaces.
+* BART - https://huggingface.co/paramasivan27/bart_for_email_summarization_enron
+* T5 small - https://huggingface.co/paramasivan27/t5small_for_email_summarization_enron
+* Distill GPT2 - https://huggingface.co/paramasivan27/distilgpt2_for_email_summarization_enron
+* GPT2 - https://huggingface.co/paramasivan27/gpt2_for_email_summarization_enron
+
+# Gradio App 
+We have created Gradio Apps for the top two Apps 
+* BART - https://huggingface.co/spaces/paramasivan27/Email_Subject_Generation_BART
+* T5 Small - https://huggingface.co/spaces/paramasivan27/Email_Subject_Generation_T5Small
+
+
