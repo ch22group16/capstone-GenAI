@@ -13,7 +13,7 @@ The dataset is annotated Enron Subject Line Corpus. It has dev, test, and train 
 * Average subject length: 4 words
 
 Dev and test datasets have @subject, @ann0,@ann1, and @ann2 to represent the subject lines of the mail.   
-The train dataset has @subject to represent the subject line. 
+The train dataset has @subject as the subject line. 
 
 # Data preprocessing
 
@@ -22,10 +22,10 @@ We have considered the below points to preprocess the data.
 * Removed non-word and non-space characters.
 * Extracted the content before @subject as email_body
 * Extracted @subject as subject_line, @ann0 as subject_line1, @ann1 as subject_line2, and @ann2 as subject_line3.
-* Created a single data file for dev, test, and train data with columns as email_body, subject_line, subject_line1, subject_line2, subject_line3 contents.
+* Created a single data file for dev, test, and train data with columns email_body, subject_line, subject_line1, subject_line2, subject_line3 contents.
 
 We have analyzed the email body. The average email body has 2500 characters.  
-To train the dataset, we have considered the first 2500 characters of email body only from each email.
+To train the dataset, we have only considered the first 2500 characters of the email body from each email.
 
 # Zero Shot Learning
 Zero-shot learning (ZSL) is a machine learning scenario in which an AI model is trained to recognize and categorize objects   
@@ -34,9 +34,15 @@ We have applied zero shot learning from test data. The result was not accurate.
 
 # Model Training
 We have used the below models to train and test the data.
-* Facebook BART
-* Google T5
-* Chat-GPT2
-* Huggig Face DistilGPT
+* BART
+* T5 small
+* Distill GPT2
+* GPT2
 
-
+The comparison of the Rouge score of each model is 
+| Model  | Rouge 1 | Rouge 2 |  Rouge L  |
+|----------|----------|----------|----------|
+| BART    | 0.3006580658920587   | 0.15170335761446782   |0.2884998344468854   |
+| T5 Small    | 0.27557781919299007   | 0.13223830150238886   |0.26705263028546283   |
+| Distill GPT2    | Data 3   | Data 4   |Data 4   |
+| GPT2    | Data 3   | Data 4   |Data 4   |
