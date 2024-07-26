@@ -39,10 +39,19 @@ We have used the below models to train and test the data.
 * Distill GPT2
 * GPT2
 
+We have listed down the comparison between each model.
+
+|   |BART  | T5 Text-to-Text Transfer Transformer | GPT2-small |  DistilGPT  |
+|----------|----------|----------|----------|----------|
+| Developed By    | Facebook   | Google   |Open AI   | Open AI|
+| Architecture    | • Combines bidirectional (like BERT) and autoregressive (like GPT) training objectives.<br/> • Encoder-decoder architecture, where the encoder is similar to BERT and the decoder is similar to GPT.   | • Encoder-decoder architecture. <br/> • Treats every NLP task as a text-to-text problem, converting inputs and outputs into text strings. | • Decoder only Autoregressive transformer architecture. | • Distilled version of GPT, created using a process called knowledge distillation. <br/> • Smaller and faster while retaining most of the performance of the original GPT model.|
+| Training Objective    |• Pre-trained on a denoising autoencoder task, which involves corrupting text and then training the model to reconstruct the original text. <br/> • Supports a variety of noising functions,such as token masking, token deletion, and sentence permutation.  |• Pre-trained on a multi-task mixture of unsupervised and supervised tasks.<br/> • Uses a span-corruption objective during pre-training, where spans of text are masked and the model learns to predict the missing text.|• Trained to predict the next token in a sequence, given all the previous tokens in an unsupervised manner.|• Trained to mimic the behaviour of the larger GPT model by learning from its outputs.<br/> • Maintains the autoregressive language modelling objective.|
+| Common Use Cases    |• Text generation <br/>• Text summarization <br/>• Machine translation <br/>• Question answering   |• Text generation <br/>• Text summarization <br/>• Machine translation <br/>• Question answering <br/>• Text classification   |• Text generation <br/>• Chatbots <br/>• Completion of text <br/>• Creative writing   |• Text generation <br/>• Chatbots <br/>• Applications requiring faster inference and reduced resource consumption.|
+
 The comparison of the Rouge score of each model is 
 | Model  | Rouge 1 | Rouge 2 |  Rouge L  |
 |----------|----------|----------|----------|
 | BART    | 0.3006580658920587   | 0.15170335761446782   |0.2884998344468854   |
 | T5 Small    | 0.27557781919299007   | 0.13223830150238886   |0.26705263028546283   |
-| Distill GPT2    | Data 3   | Data 4   |Data 4   |
+| Distil GPT2    | Data 3   | Data 4   |Data 4   |
 | GPT2    | Data 3   | Data 4   |Data 4   |
