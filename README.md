@@ -54,7 +54,7 @@ The comparison of the Rouge score of each model is
 | BART    | 0.3006580658920587   | 0.15170335761446782   |0.2884998344468854   |
 | T5 Small    | 0.27557781919299007   | 0.13223830150238886   |0.26705263028546283   |
 | Distil GPT2    | 0.10658709214367193   | 0.041839523780108655   |0.10234448377437692   |
-| GPT2    | Data 3   | Data 4   |Data 4   |
+| GPT2    | 0.015072665203599737   | 0.005770499929776675   |0.013233120524232568   |
 
 # Model Weights
 We have saved the the model weights in Hugging Face Spaces.
