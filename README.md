@@ -15,6 +15,13 @@ The dataset is annotated Enron Subject Line Corpus. It has dev, test, and train 
 Dev and test datasets have @subject, @ann0,@ann1, and @ann2 to represent the subject lines of the mail.   
 The train dataset has @subject as the subject line. 
 
+Train Data
+![alt text](https://github.com/ch22group16/email_sub_generation/blob/main/dataset/Train.JPG)
+
+Test Data
+![alt text](https://github.com/ch22group16/email_sub_generation/blob/main/dataset/Test.JPG)
+
+
 # Data preprocessing
 
 We have considered the below points to preprocess the data. 
