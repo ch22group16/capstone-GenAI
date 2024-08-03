@@ -68,4 +68,7 @@ We have created Gradio Apps for the top two Apps
 * BART - https://huggingface.co/spaces/paramasivan27/Email_Subject_Generation_BART
 * T5 Small - https://huggingface.co/spaces/paramasivan27/Email_Subject_Generation_T5Small
 
+# Human Validation
+![alt text](https://github.com/ch22group16/email_sub_generation/blob/main/HumanValidation/BART/ConferenceCall.JPG)
+![alt text](https://github.com/ch22group16/email_sub_generation/blob/main/HumanValidation/T5Small/ConferenceCall.JPG)
 
