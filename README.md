@@ -15,10 +15,10 @@ The dataset is annotated Enron Subject Line Corpus. It has dev, test, and train 
 Dev and test datasets have @subject, @ann0,@ann1, and @ann2 to represent the subject lines of the mail.   
 The train dataset has @subject as the subject line. 
 
-Train Data
+**Train Data**
 ![alt text](https://github.com/ch22group16/email_sub_generation/blob/main/dataset/Train.JPG)
 
-Test Data
+**Test Data**
 ![alt text](https://github.com/ch22group16/email_sub_generation/blob/main/dataset/Test.JPG)
 
 
@@ -35,9 +35,16 @@ We have analyzed the email body. The average email body has 2500 characters.
 To train the dataset, we have only considered the first 2500 characters of the email body from each email.
 
 # Zero Shot Learning
-Zero-shot learning (ZSL) is a machine learning scenario in which an AI model is trained to recognize and categorize objects   
-or concepts without having seen any examples of those categories or concepts beforehand.
-We have applied zero shot learning from test data. The result was not accurate. 
+We perormed Zero Shot testing in all the models we tried. The common trend that we noticed was long subject lines. 
+
+For Example:
+
+**Email Body:** _Hi Judy How are you I sent Ingrid an email and she told me that you are still at Enron Thats good I tried to call you at work but the girl that answered the phone said that you were on vacation today How are the kids and Rob I think about you all of the time Ingrid told me that she told you that I got married It isnt Tod it is James Johnson that I dated in high school We could have saved each other a lot of heart ache and just stayed together He is really sweet He has 3 boys so now there are 4 boys in my house I am real outnumbered But its fun Are you still working parttime or fulltime There is so much to talk about we need to get together for lunch or something Maybe we could meet somewhere one day let me know My phone numbers are Home 2818073186 and work 7132154473 And now you have my email address Talk to you soon Laurie
+_
+
+**Subject Line:** _Latest Marketing List_
+
+**Generated Summary:** _Laurie writes to her ex-boyfriend from high school. She wants to know if he is still at Enron. She also wants to meet up for lunch._
 
 # Model Training
 We have used the below models to train and test the data.
@@ -76,17 +83,17 @@ We have created Gradio Apps for the top two Apps
 * T5 Small - https://huggingface.co/spaces/paramasivan27/Email_Subject_Generation_T5Small
 
 # Human Validation
-Example 1: Conference Call
+**Example 1: Conference Call**
 
 ![alt text](https://github.com/ch22group16/email_sub_generation/blob/main/HumanValidation/BART/ConferenceCall.JPG)
 ![alt text](https://github.com/ch22group16/email_sub_generation/blob/main/HumanValidation/T5Small/ConferenceCall.JPG)
 
-Example 2: Tickets
+**Example 2: Tickets**
 
 ![alt text](https://github.com/ch22group16/email_sub_generation/blob/main/HumanValidation/BART/DaveMatthews.JPG)
 ![alt text](https://github.com/ch22group16/email_sub_generation/blob/main/HumanValidation/T5Small/DaveMatthews.JPG)
 
-Example 3: Emmissions Testing
+**Example 3: Emmissions Testing**
 
 ![alt text](https://github.com/ch22group16/email_sub_generation/blob/main/HumanValidation/BART/EmmissionsTesting.JPG)
 ![alt text](https://github.com/ch22group16/email_sub_generation/blob/main/HumanValidation/T5Small/EmmissionsTesting.JPG)
