@@ -35,7 +35,7 @@ We have analyzed the email body. The average email body has 2500 characters.
 To train the dataset, we have only considered the first 2500 characters of the email body from each email.
 
 # Zero Shot Learning
-We perormed Zero Shot testing in all the models we tried. The common trend that we noticed was long subject lines. 
+We perormed Zero Shot testing in all the models we tried. The common trend that we noticed was long subject lines. Therefore, we focussed on hyper parameters such as length_penalty, max_new_tokens, min_length
 
 For Example:
 
