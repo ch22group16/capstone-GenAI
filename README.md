@@ -69,6 +69,17 @@ We have created Gradio Apps for the top two Apps
 * T5 Small - https://huggingface.co/spaces/paramasivan27/Email_Subject_Generation_T5Small
 
 # Human Validation
+Example 1: Conference Call
+
 ![alt text](https://github.com/ch22group16/email_sub_generation/blob/main/HumanValidation/BART/ConferenceCall.JPG)
 ![alt text](https://github.com/ch22group16/email_sub_generation/blob/main/HumanValidation/T5Small/ConferenceCall.JPG)
 
+Example 2: Tickets
+
+![alt text](https://github.com/ch22group16/email_sub_generation/blob/main/HumanValidation/BART/DaveMatthews.JPG)
+![alt text](https://github.com/ch22group16/email_sub_generation/blob/main/HumanValidation/T5Small/DaveMatthews.JPG)
+
+Example 3: Emmissions Testing
+
+![alt text](https://github.com/ch22group16/email_sub_generation/blob/main/HumanValidation/BART/EmmissionsTesting.JPG)
+![alt text](https://github.com/ch22group16/email_sub_generation/blob/main/HumanValidation/T5Small/EmmissionsTesting.JPG)
