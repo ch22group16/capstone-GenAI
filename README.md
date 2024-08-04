@@ -35,7 +35,7 @@ We have analyzed the email body. The average email body has 2500 characters.
 To train the dataset, we have only considered the first 2500 characters of the email body from each email.
 
 
-# Models Tried
+# Models
 We have used the below models to train and test the data.
 
 |   Model  | Training Notebook |
@@ -56,7 +56,7 @@ For Example:
 
 **Generated Summary:** _Laurie writes to her ex-boyfriend from high school. She wants to know if he is still at Enron. She also wants to meet up for lunch._
 
-# Model Training
+# Model Fine Tuning
 We fine tuned and tested the four models. 
 * We started with Decoder only models like GPT2, DistilGPT2, etc
 * Though these models generated a subject line - they were innovative and did not seem to consider the email body
