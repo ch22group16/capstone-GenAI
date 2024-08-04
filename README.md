@@ -47,10 +47,14 @@ For Example:
 
 # Model Training
 We have used the below models to train and test the data.
-* BART - https://huggingface.co/paramasivan27/bart_for_email_summarization_enron
-* T5 small - https://huggingface.co/paramasivan27/t5small_for_email_summarization_enron
-* Distill GPT2 - https://huggingface.co/paramasivan27/distilgpt2_for_email_summarization_enron
-* GPT2 - https://huggingface.co/paramasivan27/gpt2_for_email_summarization_enron
+
+|   Model  | Training Notebook |  Model Weights  |
+|----------|-------------------|-----------------|
+
+| BART | Capstone_Group_16_BART_WandB.ipynb | https://huggingface.co/paramasivan27/bart_for_email_summarization_enron |
+| T5 small | email_sub_gen_T5_small.ipynb | https://huggingface.co/paramasivan27/t5small_for_email_summarization_enron |
+| Distill GPT2 | Capstone_Group_16_DistilGPT2_WandB.ipynb | https://huggingface.co/paramasivan27/distilgpt2_for_email_summarization_enron |
+| GPT2 | email_sub_gen_gpt2_latest.ipynb | https://huggingface.co/paramasivan27/gpt2_for_email_summarization_enron |
 
 We have listed down the comparison between each model.
 
