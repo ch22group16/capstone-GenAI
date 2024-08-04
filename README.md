@@ -50,7 +50,6 @@ We have used the below models to train and test the data.
 
 |   Model  | Training Notebook |  Model Weights  |
 |----------|-------------------|-----------------|
-
 | BART | Capstone_Group_16_BART_WandB.ipynb | https://huggingface.co/paramasivan27/bart_for_email_summarization_enron |
 | T5 small | email_sub_gen_T5_small.ipynb | https://huggingface.co/paramasivan27/t5small_for_email_summarization_enron |
 | Distill GPT2 | Capstone_Group_16_DistilGPT2_WandB.ipynb | https://huggingface.co/paramasivan27/distilgpt2_for_email_summarization_enron |
