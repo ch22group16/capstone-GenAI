@@ -45,7 +45,7 @@ We have used the below models to train and test the data.
 | Distill GPT2 | Capstone_Group_16_DistilGPT2_WandB.ipynb |
 | GPT2 | email_sub_gen_gpt2_latest.ipynb |
 
-# Zero Shot Learning
+# Zero Shot Testing
 We performed Zero Shot testing in all the models we tried. The common trend that we noticed was long subject lines. Therefore, we focussed on hyper parameters such as length_penalty, max_new_tokens, max_length, min_length and num_beams
 
 For Example:
