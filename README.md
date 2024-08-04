@@ -34,8 +34,19 @@ We have considered the below points to preprocess the data.
 We have analyzed the email body. The average email body has 2500 characters.  
 To train the dataset, we have only considered the first 2500 characters of the email body from each email.
 
+
+# Models Tried
+We have used the below models to train and test the data.
+
+|   Model  | Training Notebook |
+|----------|-------------------|
+| BART | Capstone_Group_16_BART_WandB.ipynb |
+| T5 small | email_sub_gen_T5_small.ipynb |
+| Distill GPT2 | Capstone_Group_16_DistilGPT2_WandB.ipynb |
+| GPT2 | email_sub_gen_gpt2_latest.ipynb |
+
 # Zero Shot Learning
-We perormed Zero Shot testing in all the models we tried. The common trend that we noticed was long subject lines. Therefore, we focussed on hyper parameters such as length_penalty, max_new_tokens, min_length
+We performed Zero Shot testing in all the models we tried. The common trend that we noticed was long subject lines. Therefore, we focussed on hyper parameters such as length_penalty, max_new_tokens, max_length, min_length and num_beams
 
 For Example:
 
@@ -46,14 +57,27 @@ For Example:
 **Generated Summary:** _Laurie writes to her ex-boyfriend from high school. She wants to know if he is still at Enron. She also wants to meet up for lunch._
 
 # Model Training
-We have used the below models to train and test the data.
+We fine tuned and tested the four models. 
+* We started with Decoder only models like GPT2, DistilGPT2, etc
+* Though these models generated a subject line - they were innovative and did not seem to consider the email body
+* On further reading and understanding , we started with BART and T5 models (encoder-decoder models)
+* We could get good Rouge score with these two models 
 
-|   Model  | Training Notebook |  Model Weights  |
-|----------|-------------------|-----------------|
-| BART | Capstone_Group_16_BART_WandB.ipynb | https://huggingface.co/paramasivan27/bart_for_email_summarization_enron |
-| T5 small | email_sub_gen_T5_small.ipynb | https://huggingface.co/paramasivan27/t5small_for_email_summarization_enron |
-| Distill GPT2 | Capstone_Group_16_DistilGPT2_WandB.ipynb | https://huggingface.co/paramasivan27/distilgpt2_for_email_summarization_enron |
-| GPT2 | email_sub_gen_gpt2_latest.ipynb | https://huggingface.co/paramasivan27/gpt2_for_email_summarization_enron |
+The comparison of the Rouge score of each model is present in the below table
+
+| Model  | Rouge 1 | Rouge 2 |  Rouge L  |
+|----------|----------|----------|----------|
+| BART    | 0.3006580658920587   | 0.15170335761446782   |0.2884998344468854   |
+| T5 Small    | 0.27557781919299007   | 0.13223830150238886   |0.26705263028546283   |
+| Distil GPT2    | 0.10658709214367193   | 0.041839523780108655   |0.10234448377437692   |
+| GPT2    | 0.015072665203599737   | 0.005770499929776675   |0.013233120524232568   |
+
+# Model Weights
+We have saved all the model weights in Hugging Face Spaces.
+* BART - https://huggingface.co/paramasivan27/bart_for_email_summarization_enron
+* T5 small - https://huggingface.co/paramasivan27/t5small_for_email_summarization_enron
+* Distill GPT2 - https://huggingface.co/paramasivan27/distilgpt2_for_email_summarization_enron
+* GPT2 - https://huggingface.co/paramasivan27/gpt2_for_email_summarization_enron
 
 We have listed down the comparison between each model.
 
@@ -64,20 +88,7 @@ We have listed down the comparison between each model.
 | Training Objective    |• Pre-trained on a denoising autoencoder task, which involves corrupting text and then training the model to reconstruct the original text. <br/> • Supports a variety of noising functions,such as token masking, token deletion, and sentence permutation.  |• Pre-trained on a multi-task mixture of unsupervised and supervised tasks.<br/> • Uses a span-corruption objective during pre-training, where spans of text are masked and the model learns to predict the missing text.|• Trained to predict the next token in a sequence, given all the previous tokens in an unsupervised manner.|• Trained to mimic the behaviour of the larger GPT model by learning from its outputs.<br/> • Maintains the autoregressive language modelling objective.|
 | Common Use Cases    |• Text generation <br/>• Text summarization <br/>• Machine translation <br/>• Question answering   |• Text generation <br/>• Text summarization <br/>• Machine translation <br/>• Question answering <br/>• Text classification   |• Text generation <br/>• Chatbots <br/>• Completion of text <br/>• Creative writing   |• Text generation <br/>• Chatbots <br/>• Applications requiring faster inference and reduced resource consumption.|
 
-The comparison of the Rouge score of each model is 
-| Model  | Rouge 1 | Rouge 2 |  Rouge L  |
-|----------|----------|----------|----------|
-| BART    | 0.3006580658920587   | 0.15170335761446782   |0.2884998344468854   |
-| T5 Small    | 0.27557781919299007   | 0.13223830150238886   |0.26705263028546283   |
-| Distil GPT2    | 0.10658709214367193   | 0.041839523780108655   |0.10234448377437692   |
-| GPT2    | 0.015072665203599737   | 0.005770499929776675   |0.013233120524232568   |
 
-# Model Weights
-We have saved the the model weights in Hugging Face Spaces.
-* BART - https://huggingface.co/paramasivan27/bart_for_email_summarization_enron
-* T5 small - https://huggingface.co/paramasivan27/t5small_for_email_summarization_enron
-* Distill GPT2 - https://huggingface.co/paramasivan27/distilgpt2_for_email_summarization_enron
-* GPT2 - https://huggingface.co/paramasivan27/gpt2_for_email_summarization_enron
 
 # Gradio App 
 We tested the model weights loading and Rouge score calculation for three models BART, T5 Small and DistilGPT2 model. 
