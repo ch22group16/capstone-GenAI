@@ -81,8 +81,11 @@ We have saved the the model weights in Hugging Face Spaces.
 
 # Gradio App 
 We have created Gradio Apps for the top two Apps 
-* BART - https://huggingface.co/spaces/paramasivan27/Email_Subject_Generation_BART
-* T5 Small - https://huggingface.co/spaces/paramasivan27/Email_Subject_Generation_T5Small
+
+| Model  | Gradio Notebook | Repo Folder |  Gradio App  |
+|----------|----------|----------|----------|
+| BART | Email_Subject_Line_BART_Gradio.ipynb | Email_Subject_Generation_BART | https://huggingface.co/spaces/paramasivan27/Email_Subject_Generation_BART |
+| T5 Small | Email_Subject_Line_T5Small_Gradio.ipynb | Email_Subject_Generation_T5Small |https://huggingface.co/spaces/paramasivan27/Email_Subject_Generation_T5Small |
 
 # Human Validation
 **Example 1: Conference Call**
