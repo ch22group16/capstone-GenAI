@@ -80,12 +80,21 @@ We have saved the the model weights in Hugging Face Spaces.
 * GPT2 - https://huggingface.co/paramasivan27/gpt2_for_email_summarization_enron
 
 # Gradio App 
-We have created Gradio Apps for the top two Apps 
+We tested the model weights loading and Rouge score calculation for three models BART, T5 Small and DistilGPT2 model. 
+These notebooks loads the model from Hugging Face spaces and uses the Tests data to calculate Rouge score. These notebooks also contain a simple Colab Gradio App
 
-| Model  | Gradio Notebook | Repo Folder |  Gradio App  |
-|----------|----------|----------|----------|
-| BART | Email_Subject_Line_BART_Gradio.ipynb | Email_Subject_Generation_BART | https://huggingface.co/spaces/paramasivan27/Email_Subject_Generation_BART |
-| T5 Small | Email_Subject_Line_T5Small_Gradio.ipynb | Email_Subject_Generation_T5Small |https://huggingface.co/spaces/paramasivan27/Email_Subject_Generation_T5Small |
+| Model  | Colab Gradio App  |
+|--------|-------------|
+| BART  |  Email_Subject_Line_BART_Gradio.ipynb |
+| T5 Small | Email_Subject_Line_T5Small_Gradio.ipynb |
+| DistilGPT2 | Email_Subject_Line_DistilGPT2_Gradio.ipynb |
+
+Finally we have published the two models BART and T5 Gradio Spaces. The below table contiains the name of the folder in this repository and the Hugging Face URL for the application 
+
+| Model  | Repo Folder |  Gradio App  |
+|--------|-------------|--------------|
+| BART  | Email_Subject_Generation_BART | https://huggingface.co/spaces/paramasivan27/Email_Subject_Generation_BART |
+| T5 Small | Email_Subject_Generation_T5Small |https://huggingface.co/spaces/paramasivan27/Email_Subject_Generation_T5Small |
 
 # Human Validation
 **Example 1: Conference Call**
