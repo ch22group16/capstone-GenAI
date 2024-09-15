@@ -131,3 +131,10 @@ Finally we have published the two models BART and T5 Gradio Spaces. The below ta
 
 ### Problem Description
 This task involves fine-tuning a GPT model to answer questions specific to the AIML course, focusing on generating accurate and relevant answers.
+
+### Dataset
+We have used the dataset shared by the Talentspirit team below.
+
+[dataset/Dataset-1-20240909T162549Z-001.zip](https://github.com/ch22group16/capstone-GenAI/blob/4f626e1b484a53f1ef99fa7176ea90d071f0b400/dataset/Dataset-1-20240909T162549Z-001.zip)
+
+[dataset/Dataset-2-20240909T162549Z-001.zip](https://github.com/ch22group16/capstone-GenAI/blob/4f626e1b484a53f1ef99fa7176ea90d071f0b400/dataset/Dataset-2-20240909T162549Z-001.zip)
