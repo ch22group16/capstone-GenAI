@@ -1,9 +1,10 @@
-# Email Subject Line Generation
+# AI-Based Generative QA System
+## 1. Email Subject Line Generation
 
-## Problem Description
+### Problem Description
 The task is to generate concise email subject lines from the body of the email. This involves identifying the most salient sentences and summarizing them into a few words.
 
-## Dataset
+### Dataset
 We have used the dataset from [Github AESLC.](https://github.com/ryanzhumich/AESLC)
 
 The dataset is annotated Enron Subject Line Corpus. It has dev, test, and train email datasets.
@@ -15,14 +16,16 @@ The dataset is annotated Enron Subject Line Corpus. It has dev, test, and train 
 Dev and test datasets have @subject, @ann0,@ann1, and @ann2 to represent the subject lines of the mail.   
 The train dataset has @subject as the subject line. 
 
-**Train Data**
+**Train Data**  
+
 ![alt text](https://github.com/ch22group16/email_sub_generation/blob/main/dataset/Train.JPG)
 
-**Test Data**
+**Test Data**  
+
 ![alt text](https://github.com/ch22group16/email_sub_generation/blob/main/dataset/Test.JPG)
 
 
-# Data preprocessing
+### Data preprocessing
 
 We have considered the below points to preprocess the data. 
 * Removed unnecessary spaces with single space.
@@ -35,7 +38,7 @@ We have analyzed the email body. The average email body has 2500 characters.
 To train the dataset, we have only considered the first 2500 characters of the email body from each email.
 
 
-# Models
+### Models
 We have used the below models to train and test the data.
 
 |   Model  | Training Notebook |
@@ -45,7 +48,7 @@ We have used the below models to train and test the data.
 | Distill GPT2 | Capstone_Group_16_DistilGPT2_WandB.ipynb |
 | GPT2 | email_sub_gen_gpt2_latest.ipynb |
 
-# Zero Shot Testing
+### Zero Shot Testing
 We performed Zero Shot testing in all the models we tried. The common trend that we noticed was long subject lines. Therefore, we focussed on hyper parameters such as length_penalty, max_new_tokens, max_length, min_length and num_beams
 
 For Example:
@@ -56,7 +59,7 @@ For Example:
 
 **Generated Summary:** _Laurie writes to her ex-boyfriend from high school. She wants to know if he is still at Enron. She also wants to meet up for lunch._
 
-# Model Fine Tuning
+### Model Fine Tuning
 We fine tuned and tested the four models. 
 * We started with Decoder only models like GPT2, DistilGPT2, etc
 * Though these models generated a subject line - they were innovative and did not seem to consider the email body
@@ -72,14 +75,14 @@ The comparison of the Rouge score of each model is present in the below table
 | Distil GPT2    | 0.10658709214367193   | 0.041839523780108655   |0.10234448377437692   |
 | GPT2    | 0.015072665203599737   | 0.005770499929776675   |0.013233120524232568   |
 
-# Model Weights
+### Model Weights
 We have saved all the model weights in Hugging Face Spaces.
 * BART - https://huggingface.co/paramasivan27/bart_for_email_summarization_enron
 * T5 small - https://huggingface.co/paramasivan27/t5small_for_email_summarization_enron
 * Distill GPT2 - https://huggingface.co/paramasivan27/distilgpt2_for_email_summarization_enron
 * GPT2 - https://huggingface.co/paramasivan27/gpt2_for_email_summarization_enron
 
-# Observation and Further Reading
+### Observation and Further Reading
 
 We have listed down the comparison between each model. This understanding made it clear to us on why BART and T5 modles performed better
 
@@ -90,7 +93,7 @@ We have listed down the comparison between each model. This understanding made i
 | Training Objective    |• Pre-trained on a denoising autoencoder task, which involves corrupting text and then training the model to reconstruct the original text. <br/> • Supports a variety of noising functions,such as token masking, token deletion, and sentence permutation.  |• Pre-trained on a multi-task mixture of unsupervised and supervised tasks.<br/> • Uses a span-corruption objective during pre-training, where spans of text are masked and the model learns to predict the missing text.|• Trained to predict the next token in a sequence, given all the previous tokens in an unsupervised manner.|• Trained to mimic the behaviour of the larger GPT model by learning from its outputs.<br/> • Maintains the autoregressive language modelling objective.|
 | Common Use Cases    |• Text generation <br/>• Text summarization <br/>• Machine translation <br/>• Question answering   |• Text generation <br/>• Text summarization <br/>• Machine translation <br/>• Question answering <br/>• Text classification   |• Text generation <br/>• Chatbots <br/>• Completion of text <br/>• Creative writing   |• Text generation <br/>• Chatbots <br/>• Applications requiring faster inference and reduced resource consumption.|
 
-# Gradio App 
+### Gradio App 
 We tested the model weights loading and Rouge score calculation for three models BART, T5 Small and DistilGPT2 model. 
 These notebooks loads the model from Hugging Face spaces and uses the Tests data to calculate Rouge score. These notebooks also contain a simple Colab Gradio App
 
@@ -107,7 +110,7 @@ Finally we have published the two models BART and T5 Gradio Spaces. The below ta
 | BART  | Email_Subject_Generation_BART | https://huggingface.co/spaces/paramasivan27/Email_Subject_Generation_BART |
 | T5 Small | Email_Subject_Generation_T5Small |https://huggingface.co/spaces/paramasivan27/Email_Subject_Generation_T5Small |
 
-# Human Validation
+### Human Validation
 **Example 1: Conference Call**
 
 ![alt text](https://github.com/ch22group16/email_sub_generation/blob/main/HumanValidation/BART/ConferenceCall.JPG)
@@ -122,3 +125,9 @@ Finally we have published the two models BART and T5 Gradio Spaces. The below ta
 
 ![alt text](https://github.com/ch22group16/email_sub_generation/blob/main/HumanValidation/BART/EmmissionsTesting.JPG)
 ![alt text](https://github.com/ch22group16/email_sub_generation/blob/main/HumanValidation/T5Small/EmmissionsTesting.JPG)
+
+
+## 2. Question Answering on AIML Queries
+
+### Problem Description
+This task involves fine-tuning a GPT model to answer questions specific to the AIML course, focusing on generating accurate and relevant answers.
