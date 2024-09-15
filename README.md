@@ -138,3 +138,11 @@ We have used the dataset shared by the Talentspirit team below.
 [dataset/Dataset-1-20240909T162549Z-001.zip](https://github.com/ch22group16/capstone-GenAI/blob/4f626e1b484a53f1ef99fa7176ea90d071f0b400/dataset/Dataset-1-20240909T162549Z-001.zip)
 
 [dataset/Dataset-2-20240909T162549Z-001.zip](https://github.com/ch22group16/capstone-GenAI/blob/4f626e1b484a53f1ef99fa7176ea90d071f0b400/dataset/Dataset-2-20240909T162549Z-001.zip)
+
+### Data preprocessing
+### Models
+### Zero Shot Testing
+### Model Weights
+### Observation and Further Reading
+### Gradio App
+### Human Validation
