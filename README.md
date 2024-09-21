@@ -103,7 +103,7 @@ These notebooks loads the model from Hugging Face spaces and uses the Tests data
 | T5 Small | Email_Subject_Line_T5Small_Gradio.ipynb |
 | DistilGPT2 | Email_Subject_Line_DistilGPT2_Gradio.ipynb |
 
-Finally we have published the two models BART and T5 Gradio Spaces. The below table contiains the name of the folder in this repository and the Hugging Face URL for the application 
+Finally, we have published the two models BART and T5 Gradio Spaces. The below table contains the name of the folder in this repository and the Hugging Face URL for the application 
 
 | Model  | Repo Folder |  Gradio App  |
 |--------|-------------|--------------|
@@ -192,4 +192,14 @@ We have listed the comparisons between each model.
 | Common Use Cases    |• Text generation <br/>• Text summarization <br/>• Machine translation <br/>• Question answering   |• Text generation tasks <br/> • question answering, •  summarization, and reasoning.   |• Text generation <br/>• Summarization <br/>• Transalation <br/>• Code generation   |• Text generation <br/>• Summarization <br/>• Transalation <br/>• Code generation|
 
 ### Gradio App
+
+We tested the model weights loading and Rouge score calculation for three models BART, T5 Small and DistilGPT2 model. 
+These notebooks loads the model from Hugging Face spaces and uses the Tests data to calculate Rouge score. These notebooks also contain a simple Colab Gradio App
+
+| Model  | Colab Gradio App  |
+|--------|-------------|
+| GPT2  |  [Email_Subject_Line_BART_Gradio.ipynb](https://huggingface.co/spaces/paramasivan27/AIML_QandA_finetuned_gpt2) |
+| T5 Small | Email_Subject_Line_T5Small_Gradio.ipynb |
+| DistilGPT2 | Email_Subject_Line_DistilGPT2_Gradio.ipynb |
+
 ### Human Validation
