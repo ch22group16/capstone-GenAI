@@ -198,8 +198,9 @@ These notebooks loads the model from Hugging Face spaces and uses the Tests data
 
 | Model  | Colab Gradio App  |
 |--------|-------------|
-| GPT2  |  [Email_Subject_Line_BART_Gradio.ipynb](https://huggingface.co/spaces/paramasivan27/AIML_QandA_finetuned_gpt2) |
-| T5 Small | Email_Subject_Line_T5Small_Gradio.ipynb |
-| DistilGPT2 | Email_Subject_Line_DistilGPT2_Gradio.ipynb |
+| GPT2  |  https://huggingface.co/spaces/paramasivan27/AIML_QandA_finetuned_gpt2 |
+| Gemma 2 |  |
+| Llama 2 | https://github.com/ch22group16/capstone-GenAI/blob/main/Llama2_Testing%2C_Rouge_Score_%26_Gradio.ipynb |
+| Llama 3 | https://github.com/ch22group16/capstone-GenAI/blob/main/Llama3_Testing%2C_Rouge_Score_%26_Gradio.ipynb |
 
 ### Human Validation
