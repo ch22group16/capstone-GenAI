@@ -140,8 +140,39 @@ We have used the dataset shared by the Talentspirit team below.
 [dataset/Dataset-2-20240909T162549Z-001.zip](https://github.com/ch22group16/capstone-GenAI/blob/4f626e1b484a53f1ef99fa7176ea90d071f0b400/dataset/Dataset-2-20240909T162549Z-001.zip)
 
 ### Data preprocessing
+The preprocessing in task 2 primarily involved in formatting the training dataset to an appropriate prompt format – we used 2 prompting formats GPT style and Alpaca style prompting.
+
 ### Models
+We have used the below models to train and test the data.
+
+|   Model  | Training Notebook |
+|----------|-------------------|
+| GPT2 | [email_sub_gen_gpt2_latest.ipynb](https://github.com/ch22group16/capstone-GenAI/blob/main/QnA_finetuning_gpt2_V4.ipynb) |
+| Gemma 2 |  |
+| Llama 2 | [email_sub_gen_gpt2_latest.ipynb](https://github.com/ch22group16/capstone-GenAI/blob/main/Llama2_Testing%2C_Rouge_Score_%26_Gradio.ipynb) |
+| Llama 3 | [email_sub_gen_gpt2_latest.ipynb](https://github.com/ch22group16/capstone-GenAI/blob/main/Llama3_Testing%2C_Rouge_Score_%26_Gradio.ipynb) |
+
 ### Zero Shot Testing
+1. Zero Shot testing in all the models
+2. Hallucinations noticed before fine tuning
+3. Focused on hyper parameters such as
+  * Prompt structure
+  * Max New Tokens / Max Length parameters
+
+### Model Fine Tuning
+We fine tuned and tested the four models. 
+* We started with Decoder only models like GPT2, Gemma 2, Llama2, and Llama 3.
+
+The comparison of the Rouge score of each model of dataset-2 is present in the below table
+
+| Model  | Rouge 1 | Rouge 2 |  Rouge L  |
+|----------|----------|----------|----------|
+| GPT2    | 0.36956118319733666   | 0.16392918775217533   |0.3127743307192723   |
+| Gemma 2    | 0.31848372311543155   | 0.13065883451581684   |0.25403418987397103   |
+| Llama 2    | 0.3912341324778206   | 0.18069427233839613   |0.3157717606974474   |
+| Llama 3    | 0.48342827227660445   | 0.2631626190945965   |0.41491957225471765   |
+
+
 ### Model Weights
 ### Observation and Further Reading
 ### Gradio App
