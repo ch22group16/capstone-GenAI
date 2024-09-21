@@ -174,6 +174,22 @@ The comparison of the Rouge score of each model of dataset-2 is present in the b
 
 
 ### Model Weights
+
+We have saved all the model weights in Hugging Face Spaces.
+* GPT 2 - https://huggingface.co/paramasivan27/gpt2_for_q_and_a
+* Gemma 2 - 
+* Llama 2 - https://huggingface.co/paramasivan27/Llama-2-7b-for_q_and_a
+* Llama 3 - https://huggingface.co/paramasivan27/llama-3-8b-bnb-4bit
+
+  
 ### Observation and Further Reading
+We have listed the comparisons between each model. 
+|   |GPT2  | Gemma 2 | Llama 2 |  Llama 3  |
+|----------|----------|----------|----------|----------|
+| Developed By    | Open AI   | Google   |Meta   | Meta |
+| Architecture    | • Distilled version of GPT, created using a process called knowledge distillation. <br/> • Smaller and faster while retaining most of the performance of the original GPT model.   | • Decoder only architecture   |  • Decoder only architecture.<br/> • Llama 2 is an auto-regressive language model that uses an optimized transformer architecture. |  • Decoder only architecture.<br/> • Llama 3 is an auto-regressive language model that uses an optimized transformer architecture. |
+| Training Objective    |• Trained to mimic the behaviour of the larger GPT model by learning from its outputs.<br/> • Maintains the autoregressive language modelling objective.   |   | • Pre-trained on using publicly available online data. | • Pre-trained on using publicly available online data. |
+| Common Use Cases    |• Text generation <br/>• Text summarization <br/>• Machine translation <br/>• Question answering   |• Text generation tasks <br/> • question answering, •  summarization, and reasoning.   |• Text generation <br/>• Summarization <br/>• Transalation <br/>• Code generation   |• Text generation <br/>• Summarization <br/>• Transalation <br/>• Code generation|
+
 ### Gradio App
 ### Human Validation
