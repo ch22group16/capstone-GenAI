@@ -193,7 +193,7 @@ We have listed the comparisons between each model.
 
 ### Gradio App
 
-We tested the model weights loading and Rouge score calculation for three models BART, T5 Small and DistilGPT2 model. 
+We tested the model weights loading and Rouge score calculation for four models GPT2, Gemma2, Llama 2, and Llama 3 model. 
 These notebooks loads the model from Hugging Face spaces and uses the Tests data to calculate Rouge score. These notebooks also contain a simple Colab Gradio App
 
 | Model  | Colab Gradio App  |
