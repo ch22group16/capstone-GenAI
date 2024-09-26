@@ -148,8 +148,8 @@ We have used the below models to train and test the data.
 |   Model  | Training Notebook |
 |----------|-------------------|
 | GPT2 | [email_sub_gen_gpt2_latest.ipynb](https://github.com/ch22group16/capstone-GenAI/blob/main/QnA_finetuning_gpt2_V4.ipynb) |
-| Gemma 2 |  |
 | Llama 2 | [email_sub_gen_gpt2_latest.ipynb](https://github.com/ch22group16/capstone-GenAI/blob/main/Llama2_Testing%2C_Rouge_Score_%26_Gradio.ipynb) |
+| Gemma 2 |  |
 | Llama 3 | [email_sub_gen_gpt2_latest.ipynb](https://github.com/ch22group16/capstone-GenAI/blob/main/Llama3_Testing%2C_Rouge_Score_%26_Gradio.ipynb) |
 
 ### Zero Shot Testing
@@ -161,7 +161,9 @@ We have used the below models to train and test the data.
 
 ### Model Fine Tuning
 We fine tuned and tested the four models. 
-* We started with Decoder only models like GPT2, Gemma 2, Llama2, and Llama 3.
+* We started with Decoder only models like GPT2, Llama2, Gemma 2 and Llama 3.
+
+
 
 The comparison of the Rouge score of each model of dataset-2 is present in the below table
 
@@ -177,8 +179,8 @@ The comparison of the Rouge score of each model of dataset-2 is present in the b
 
 We have saved all the model weights in Hugging Face Spaces.
 * GPT 2 - https://huggingface.co/paramasivan27/gpt2_for_q_and_a
-* Gemma 2 - https://huggingface.co/paramasivan27/Gemma_2b_it_q_and_a
 * Llama 2 - https://huggingface.co/paramasivan27/Llama-2-7b-for_q_and_a
+* Gemma 2 - https://huggingface.co/paramasivan27/Gemma_2b_it_q_and_a
 * Llama 3 - https://huggingface.co/paramasivan27/llama-3-8b-bnb-4bit
 
   
@@ -199,8 +201,8 @@ These notebooks loads the model from Hugging Face spaces and uses the Tests data
 | Model  | Colab Gradio App  |
 |--------|-------------|
 | GPT2  |  https://huggingface.co/spaces/paramasivan27/AIML_QandA_finetuned_gpt2 |
-| Gemma 2 |  |
 | Llama 2 | https://github.com/ch22group16/capstone-GenAI/blob/main/Llama2_Testing%2C_Rouge_Score_%26_Gradio.ipynb |
+| Gemma 2 |  |
 | Llama 3 | https://github.com/ch22group16/capstone-GenAI/blob/main/Llama3_Testing%2C_Rouge_Score_%26_Gradio.ipynb |
 
 ### Human Validation
