@@ -43,10 +43,10 @@ We have used the below models to train and test the data.
 
 |   Model  | Training Notebook |
 |----------|-------------------|
-| BART | Capstone_Group_16_BART_WandB.ipynb |
-| T5 small | email_sub_gen_T5_small.ipynb |
-| Distill GPT2 | Capstone_Group_16_DistilGPT2_WandB.ipynb |
-| GPT2 | email_sub_gen_gpt2_latest.ipynb |
+| BART | [Capstone_Group_16_BART_WandB.ipynb](https://github.com/ch22group16/capstone-GenAI/blob/main/Capstone_Group_16_BART_WandB.ipynb)|
+| T5 small | [email_sub_gen_T5_small.ipynb](https://github.com/ch22group16/capstone-GenAI/blob/main/email_sub_gen_T5_small.ipynb) |
+| Distill GPT2 | [Capstone_Group_16_DistilGPT2_WandB.ipynb](https://github.com/ch22group16/capstone-GenAI/blob/main/Capstone_Group_16_DistilGPT2_WandB.ipynb) |
+| GPT2 | [email_sub_gen_gpt2_latest.ipynb] (https://github.com/ch22group16/capstone-GenAI/blob/main/email_sub_gen_gpt2_latest.ipynb) |
 
 ### Zero Shot Testing
 We performed Zero Shot testing in all the models we tried. The common trend that we noticed was long subject lines. Therefore, we focussed on hyper parameters such as length_penalty, max_new_tokens, max_length, min_length and num_beams
@@ -99,9 +99,9 @@ These notebooks loads the model from Hugging Face spaces and uses the Tests data
 
 | Model  | Colab Gradio App  |
 |--------|-------------|
-| BART  |  Email_Subject_Line_BART_Gradio.ipynb |
-| T5 Small | Email_Subject_Line_T5Small_Gradio.ipynb |
-| DistilGPT2 | Email_Subject_Line_DistilGPT2_Gradio.ipynb |
+| BART  |  [Email_Subject_Line_BART_Gradio.ipynb](https://github.com/ch22group16/capstone-GenAI/blob/main/Email_Subject_Line_BART_Gradio.ipynb) |
+| T5 Small | [Email_Subject_Line_T5Small_Gradio.ipynb](https://github.com/ch22group16/capstone-GenAI/blob/main/Email_Subject_Line_T5Small_Gradio.ipynb) |
+| DistilGPT2 | [Email_Subject_Line_DistilGPT2_Gradio.ipynb](https://github.com/ch22group16/capstone-GenAI/blob/main/Email_Subject_Line_DistilGPT2_Gradio.ipynb) |
 
 Finally, we have published the two models BART and T5 Gradio Spaces. The below table contains the name of the folder in this repository and the Hugging Face URL for the application 
 
@@ -163,7 +163,17 @@ We have used the below models to train and test the data.
 We fine tuned and tested the four models. 
 * We started with Decoder only models like GPT2, Llama2, Gemma 2 and Llama 3.
 
+**Llama 2**  
 
+![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Question_Answering_Training_and_Gradio_Noteboooks/Llama2_20_Epochs_training_loss.png)
+
+**Gemma 2**  
+
+![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Question_Answering_Training_and_Gradio_Noteboooks/Gemma2%2020%20Epochs_training_loss.png)
+
+**Llama 3**  
+
+![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Question_Answering_Training_and_Gradio_Noteboooks/Llama3_20_Epochs_training_loss.png)
 
 The comparison of the Rouge score of each model of dataset-2 is present in the below table
 
