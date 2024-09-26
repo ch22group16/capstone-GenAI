@@ -168,8 +168,8 @@ The comparison of the Rouge score of each model of dataset-2 is present in the b
 | Model  | Rouge 1 | Rouge 2 |  Rouge L  |
 |----------|----------|----------|----------|
 | GPT2    | 0.36956118319733666   | 0.16392918775217533   |0.3127743307192723   |
-| Gemma 2    | 0.31848372311543155   | 0.13065883451581684   |0.25403418987397103   |
 | Llama 2    | 0.3912341324778206   | 0.18069427233839613   |0.3157717606974474   |
+| Gemma 2    | 0.455100963377403  | 0.22904456388130273   |0.38447970761053407   |
 | Llama 3    | 0.48342827227660445   | 0.2631626190945965   |0.41491957225471765   |
 
 
@@ -177,7 +177,7 @@ The comparison of the Rouge score of each model of dataset-2 is present in the b
 
 We have saved all the model weights in Hugging Face Spaces.
 * GPT 2 - https://huggingface.co/paramasivan27/gpt2_for_q_and_a
-* Gemma 2 - 
+* Gemma 2 - https://huggingface.co/paramasivan27/Gemma_2b_it_q_and_a
 * Llama 2 - https://huggingface.co/paramasivan27/Llama-2-7b-for_q_and_a
 * Llama 3 - https://huggingface.co/paramasivan27/llama-3-8b-bnb-4bit
 
