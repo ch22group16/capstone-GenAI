@@ -210,9 +210,11 @@ These notebooks loads the model from Hugging Face spaces and uses the Tests data
 
 | Model  | Colab Gradio App  |
 |--------|-------------|
-| GPT2  |  https://huggingface.co/spaces/paramasivan27/AIML_QandA_finetuned_gpt2 |
-| Llama 2 | https://github.com/ch22group16/capstone-GenAI/blob/main/Llama2_Testing%2C_Rouge_Score_%26_Gradio.ipynb |
-| Gemma 2 |  |
-| Llama 3 | https://github.com/ch22group16/capstone-GenAI/blob/main/Llama3_Testing%2C_Rouge_Score_%26_Gradio.ipynb |
+| GPT2  |  [paramasivan27/AIML_QandA_finetuned_gpt2](https://huggingface.co/spaces/paramasivan27/AIML_QandA_finetuned_gpt2) |
+| Llama 2 | [Llama2_Testing,_Rouge_Score_&_Gradio.ipynb](https://github.com/ch22group16/capstone-GenAI/blob/main/Question_Answering_Training_and_Gradio_Noteboooks/Llama2_Testing%2C_Rouge_Score_%26_Gradio.ipynb) |
+| Gemma 2 | [Gemma2_Testing,_Rouge_Score_&_Gradio.ipynb](https://github.com/ch22group16/capstone-GenAI/blob/main/Question_Answering_Training_and_Gradio_Noteboooks/Gemma2_Testing%2C_Rouge_Score_%26_Gradio.ipynb) |
+| Llama 3 | [Llama3_Testing,_Rouge_Score_&_Gradio.ipynb](https://github.com/ch22group16/capstone-GenAI/blob/main/Question_Answering_Training_and_Gradio_Noteboooks/Llama3_Testing%2C_Rouge_Score_%26_Gradio.ipynb) |
 
 ### Human Validation
+
+
