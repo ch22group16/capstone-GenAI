@@ -217,4 +217,8 @@ These notebooks loads the model from Hugging Face spaces and uses the Tests data
 
 ### Human Validation
 
+**Example 1: EigenValues**
 
+![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Human_Validation_Question_Answering/Human_Validation_GPT2_Eigen_Values.png)
+![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Human_Validation_Question_Answering/Human_Validation_Gemma2_Eigen_Values.png)
+![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Human_Validation_Question_Answering/Human_Validation_Llama3_Eigen_Values.png)
