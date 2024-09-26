@@ -147,10 +147,10 @@ We have used the below models to train and test the data.
 
 |   Model  | Training Notebook |
 |----------|-------------------|
-| GPT2 | [email_sub_gen_gpt2_latest.ipynb](https://github.com/ch22group16/capstone-GenAI/blob/main/QnA_finetuning_gpt2_V4.ipynb) |
-| Llama 2 | [email_sub_gen_gpt2_latest.ipynb](https://github.com/ch22group16/capstone-GenAI/blob/main/Llama2_Testing%2C_Rouge_Score_%26_Gradio.ipynb) |
-| Gemma 2 |  |
-| Llama 3 | [email_sub_gen_gpt2_latest.ipynb](https://github.com/ch22group16/capstone-GenAI/blob/main/Llama3_Testing%2C_Rouge_Score_%26_Gradio.ipynb) |
+| GPT2 | [QnA_finetuning_gpt2_V4.ipynb](https://github.com/ch22group16/capstone-GenAI/blob/main/Question_Answering_Training_and_Gradio_Noteboooks/QnA_finetuning_gpt2_V4.ipynb)|
+| Llama 2 | [Capstone_Group16_QnA_finetuning_LLAMA2_V1.ipynb](https://github.com/ch22group16/capstone-GenAI/blob/main/Question_Answering_Training_and_Gradio_Noteboooks/Capstone_Group16_QnA_finetuning_LLAMA2_V1.ipynb) |
+| Gemma 2 | [QnA_gemma_2_2b_v5.ipynb](https://github.com/ch22group16/capstone-GenAI/blob/main/Question_Answering_Training_and_Gradio_Noteboooks/QnA_gemma_2_2b_v5.ipynb) |
+| Llama 3 | [Capstone_Group16_QnA_finetuning_LLAMA3_V1.ipynb](https://github.com/ch22group16/capstone-GenAI/blob/main/Question_Answering_Training_and_Gradio_Noteboooks/Capstone_Group16_QnA_finetuning_LLAMA3_V1.ipynb) |
 
 ### Zero Shot Testing
 1. Zero Shot testing in all the models
