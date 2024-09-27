@@ -142,6 +142,11 @@ We have used the dataset shared by the Talentspirit team below.
 ### Data preprocessing
 The preprocessing in task 2 primarily involved in formatting the training dataset to an appropriate prompt format – we used 2 prompting formats GPT style and Alpaca style prompting.
 
+**Train**  
+![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Question_Answering_Training_and_Gradio_Noteboooks/qanda_dataset_visualization_train.png)
+**Test**
+![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Question_Answering_Training_and_Gradio_Noteboooks/qanda_dataset_visualization_test.png)
+
 ### Models
 We have used the below models to train and test the data.
 
@@ -255,3 +260,15 @@ These notebooks loads the model from Hugging Face spaces and uses the Tests data
 ![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Human_Validation_Question_Answering/Human_Validation_GPT2_Eigen_Values.png)
 ![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Human_Validation_Question_Answering/Human_Validation_Gemma2_Eigen_Values.png)
 ![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Human_Validation_Question_Answering/Human_Validation_Llama3_Eigen_Values.png)
+
+**Example 2: Backpropagation**
+
+![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Human_Validation_Question_Answering/Human_Validation_GPT2_backpropagation.png)
+![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Human_Validation_Question_Answering/Human_Validation_Gemma2_backpropagation.png)
+![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Human_Validation_Question_Answering/Human_Validation_Llama3_Backpropagation.png)
+
+**Example 2: Features**
+
+![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Human_Validation_Question_Answering/Human_Validation_GPT2_features.png)
+![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Human_Validation_Question_Answering/Human_Validation_Gemma2_features.png)
+![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Human_Validation_Question_Answering/Human_Validation_Llama3_features.png)
