@@ -205,19 +205,23 @@ The comparison of the Rouge score of each model of dataset-2 is present in the b
 
 ### Rouge Score Inference
 
-1.	Model Size and Capacity:
-*	Larger models like Llama 3 (8 billion parameters) and Gemma 2 (2 billion parameters) are more capable of capturing complex patterns in language and generalizing to out-of-domain questions.
+**1.	Model Size and Capacity:**
+*	Larger models like Llama 3 (8 billion parameters) and Gemma 2 (2 billion parameters) are more capable of capturing complex patterns in language and generalizing to topics not covered in training.
 *	GPT-2 Small (124 million parameters) struggles significantly with generalization, leading to lower scores, especially on multi-word sequences (ROUGE-2) and sentence-level coherence (ROUGE-L).
-2.	Architecture Advancements:
+**2.	Architecture Advancements:**
 *	Llama 3 uses a more advanced transformer architecture with optimizations that allow it to generate more fluent and coherent responses, even when fine-tuned on relatively small datasets.
 *	Gemma 2 benefits from a more modern architecture than GPT-2, though it doesn’t match Llama 3’s ability to maintain coherence across multiple domains.
 *	Llama 2 performs well but doesn’t reach the same level of fine-tuning efficiency and generalization as Llama 3, which likely benefits from additional optimizations.
-3.	Generalization to Out-of-Domain Data:
+
+![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Human_Validation_Question_Answering/Model%20Comparison.png)
+
+Ref: [Sebastian Raschka, Post](https://www.linkedin.com/posts/sebastianraschka_an-often-asked-question-is-how-gpt-compares-activity-7243972293100511233-2QPa?utm_source=share&utm_medium=member_ios)
+
+**3.	Generalization to Out-of-Domain Data:**
 *	The ROUGE score differences can also be attributed to how well each model generalizes to topics not covered in the training data.
 *	Llama 3 shows the best ability to generalize beyond the AI/ML domain, likely due to its large size, architectural sophistication, and fine-tuning efficiency.
 *	Gemma 2 and Llama 2 also generalize well but not as effectively as Llama 3.
 *	GPT-2 Small struggles the most with out-of-domain generalization, leading to significantly lower scores.
-
 
 ### Observation and Further Reading
 We have listed the comparisons between each model. 
