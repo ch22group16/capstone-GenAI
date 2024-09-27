@@ -159,11 +159,15 @@ We have used the below models to train and test the data.
   * Prompt structure
   * Max New Tokens / Max Length parameters
 
-What is Alexnet? 
+Haluciniations:
+
+_What is Alexnet? 
 Alexnet is a web application that allows you to create and manage your own websites. It is a web application that allows you to create and manage your own websites. It is a web application that allows you to create and manage your own websites
 
 What is Neural Network? 
-Neural networks are a type of neural network that is used to process information from a computer. They are used to process information from a computer and then process it back into a computer. Neural networks are used to process information from
+Neural networks are a type of neural network that is used to process information from a computer. They are used to process information from a computer and then process it back into a computer. Neural networks are used to process information from_
+
+Repetitive Answers:
 
 ![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Human_Validation_Question_Answering/ZeroShotTesting.png)
 
@@ -215,9 +219,9 @@ The comparison of the Rouge score of each model of dataset-2 is present in the b
 
 ![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Human_Validation_Question_Answering/Model%20Comparison.png)
 
-Ref: [Sebastian Raschka, Post](https://www.linkedin.com/posts/sebastianraschka_an-often-asked-question-is-how-gpt-compares-activity-7243972293100511233-2QPa?utm_source=share&utm_medium=member_ios)
+_Ref: [Sebastian Raschka, Post](https://www.linkedin.com/posts/sebastianraschka_an-often-asked-question-is-how-gpt-compares-activity-7243972293100511233-2QPa?utm_source=share&utm_medium=member_ios)_
 
-**3.	Generalization to Out-of-Domain Data:**
+**3.	Generalization to Unseen topic Questions:**
 *	The ROUGE score differences can also be attributed to how well each model generalizes to topics not covered in the training data.
 *	Llama 3 shows the best ability to generalize beyond the AI/ML domain, likely due to its large size, architectural sophistication, and fine-tuning efficiency.
 *	Gemma 2 and Llama 2 also generalize well but not as effectively as Llama 3.
