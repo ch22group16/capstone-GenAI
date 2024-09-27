@@ -231,6 +231,9 @@ _Ref: [Sebastian Raschka, Post](https://www.linkedin.com/posts/sebastianraschka_
 *	Llama 3 shows the best ability to generalize beyond the AI/ML domain, likely due to its large size, architectural sophistication, and fine-tuning efficiency.
 *	Gemma 2 and Llama 2 also generalize well but not as effectively as Llama 3.
 *	GPT-2 Small struggles the most with out-of-domain generalization, leading to significantly lower scores.
+*	The following sample question is an interesting example, the training data does not contain anything related to RAG
+
+![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Human_Validation_Question_Answering/Human_Validation_RAG.png)
 
 ### Observation and Further Reading
 We have listed the comparisons between each model. 
