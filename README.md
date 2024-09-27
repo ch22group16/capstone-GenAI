@@ -159,9 +159,20 @@ We have used the below models to train and test the data.
   * Prompt structure
   * Max New Tokens / Max Length parameters
 
+What is Alexnet? 
+Alexnet is a web application that allows you to create and manage your own websites. It is a web application that allows you to create and manage your own websites. It is a web application that allows you to create and manage your own websites
+
+What is Neural Network? 
+Neural networks are a type of neural network that is used to process information from a computer. They are used to process information from a computer and then process it back into a computer. Neural networks are used to process information from
+
+![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Human_Validation_Question_Answering/ZeroShotTesting.png)
+
 ### Model Fine Tuning
 We fine tuned and tested the four models. 
-* We started with Decoder only models like GPT2, Llama2, Gemma 2 and Llama 3.
+* Though we initially tried encoder-decoder based models, we quickly pivoted to decoder-only / generative models to improve performance on unseen topics
+* We started with finetuning GPT2
+* Finetuned three more models Llama2, Gemma 2 and Llama 3.
+* The training notebooks are as follows 
 
 **Llama 2**  
 
@@ -175,6 +186,14 @@ We fine tuned and tested the four models.
 
 ![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Question_Answering_Training_and_Gradio_Noteboooks/Llama3_20_Epochs_training_loss.png)
 
+### Model Weights
+
+We have saved all the model weights in Hugging Face Spaces.
+* GPT 2 - https://huggingface.co/paramasivan27/gpt2_for_q_and_a
+* Llama 2 - https://huggingface.co/paramasivan27/Llama-2-7b-for_q_and_a
+* Gemma 2 - https://huggingface.co/paramasivan27/Gemma_2b_it_q_and_a
+* Llama 3 - https://huggingface.co/paramasivan27/llama-3-8b-bnb-4bit
+
 The comparison of the Rouge score of each model of dataset-2 is present in the below table
 
 | Model  | Rouge 1 | Rouge 2 |  Rouge L  |
@@ -184,16 +203,22 @@ The comparison of the Rouge score of each model of dataset-2 is present in the b
 | Gemma 2    | 0.455100963377403  | 0.22904456388130273   |0.38447970761053407   |
 | Llama 3    | 0.48342827227660445   | 0.2631626190945965   |0.41491957225471765   |
 
+### Rouge Score Inference
 
-### Model Weights
+1.	Model Size and Capacity:
+*	Larger models like Llama 3 (8 billion parameters) and Gemma 2 (2 billion parameters) are more capable of capturing complex patterns in language and generalizing to out-of-domain questions.
+*	GPT-2 Small (124 million parameters) struggles significantly with generalization, leading to lower scores, especially on multi-word sequences (ROUGE-2) and sentence-level coherence (ROUGE-L).
+2.	Architecture Advancements:
+*	Llama 3 uses a more advanced transformer architecture with optimizations that allow it to generate more fluent and coherent responses, even when fine-tuned on relatively small datasets.
+*	Gemma 2 benefits from a more modern architecture than GPT-2, though it doesn’t match Llama 3’s ability to maintain coherence across multiple domains.
+*	Llama 2 performs well but doesn’t reach the same level of fine-tuning efficiency and generalization as Llama 3, which likely benefits from additional optimizations.
+3.	Generalization to Out-of-Domain Data:
+*	The ROUGE score differences can also be attributed to how well each model generalizes to topics not covered in the training data.
+*	Llama 3 shows the best ability to generalize beyond the AI/ML domain, likely due to its large size, architectural sophistication, and fine-tuning efficiency.
+*	Gemma 2 and Llama 2 also generalize well but not as effectively as Llama 3.
+*	GPT-2 Small struggles the most with out-of-domain generalization, leading to significantly lower scores.
 
-We have saved all the model weights in Hugging Face Spaces.
-* GPT 2 - https://huggingface.co/paramasivan27/gpt2_for_q_and_a
-* Llama 2 - https://huggingface.co/paramasivan27/Llama-2-7b-for_q_and_a
-* Gemma 2 - https://huggingface.co/paramasivan27/Gemma_2b_it_q_and_a
-* Llama 3 - https://huggingface.co/paramasivan27/llama-3-8b-bnb-4bit
 
-  
 ### Observation and Further Reading
 We have listed the comparisons between each model. 
 |   |GPT2  | Gemma 2 | Llama 2 |  Llama 3  |
