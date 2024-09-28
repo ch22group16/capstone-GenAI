@@ -130,7 +130,7 @@ Finally, we have published the two models BART and T5 Gradio Spaces. The below t
 ## 2. Question Answering on AIML Queries
 
 ### Problem Description
-This task involves fine-tuning a GPT model to answer questions specific to the AIML course, focusing on generating accurate and relevant answers.
+This task involves fine-tuning a GPT variant model to answer questions specific to the AIML course, focusing on generating accurate and relevant answers.
 
 ### Dataset
 We have used the dataset shared by the Talentspirit team below.
@@ -242,6 +242,8 @@ We have listed the comparisons between each model.
 |----------|----------|----------|----------|----------|
 | Developed By    | Open AI   | Google   |Meta   | Meta |
 | Model Size    | 124 million   | 2 billion   | 7 billion   | 8 billion |
+| Pre Trained Token Counts    | 10 Billion   |  2 Trillion  | 2 Trillion   | 10+ Trillion |
+| Fine Tuning Token Counts    | 178 K   |  178 K  | 178 K   | 178 K |
 | Architecture    | • GPT-2 is a unidirectional transformer. <br/> • It generates text by predicting the next token based on previous tokens, which can limit its understanding of bidirectional context. | • Text-to-text, decoder-only large language models. <br/> • Their relatively small size makes it possible to deploy them in environments with limited resources   |  • LLaMA (Large Language Model Meta AI) is a state-of-the-art transformer-based architecture optimized for downstream tasks.<br/> • It uses advanced techniques in multi-head attention and model scaling. |  • LLaMA 3 is an enhanced version of the LLaMA architecture, using cutting-edge techniques in transformer model training and efficient parameterization (bnb-4bit)  <br/>• It reduces resource consumption while maintaining performance. |
 | Common Use Cases    |• Text generation <br/>• Text summarization <br/>• Machine translation <br/>• Question answering   |• Text generation tasks <br/> • question answering, •  summarization, and reasoning.   |• Text generation <br/>• Summarization <br/>• Transalation <br/>• Code generation   |• Text generation <br/>• Summarization <br/>• Transalation <br/>• Code generation|
 
