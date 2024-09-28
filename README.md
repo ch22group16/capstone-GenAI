@@ -217,6 +217,7 @@ The comparison of the Rouge score of each model of dataset-2 is present in the b
 **1.	Model Size and Capacity:**
 *	Larger models like Llama 3 (8 billion parameters) and Gemma 2 (2 billion parameters) are more capable of capturing complex patterns in language and generalizing to topics not covered in training.
 *	GPT-2 Small (124 million parameters) struggles significantly with generalization, leading to lower scores, especially on multi-word sequences (ROUGE-2) and sentence-level coherence (ROUGE-L).
+
 **2.	Architecture Advancements:**
 *	Llama 3 uses a more advanced transformer architecture with optimizations that allow it to generate more fluent and coherent responses, even when fine-tuned on relatively small datasets.
 *	Gemma 2 benefits from a more modern architecture than GPT-2, though it doesn’t match Llama 3’s ability to maintain coherence across multiple domains.
