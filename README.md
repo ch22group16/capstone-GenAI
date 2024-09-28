@@ -164,7 +164,7 @@ We have used the below models to train and test the data.
   * Prompt structure
   * Max New Tokens / Max Length parameters
 
-Haluciniations:
+**Haluciniations:**
 
 _What is Alexnet? 
 Alexnet is a web application that allows you to create and manage your own websites. It is a web application that allows you to create and manage your own websites. It is a web application that allows you to create and manage your own websites
@@ -172,7 +172,7 @@ Alexnet is a web application that allows you to create and manage your own websi
 What is Neural Network? 
 Neural networks are a type of neural network that is used to process information from a computer. They are used to process information from a computer and then process it back into a computer. Neural networks are used to process information from_
 
-Repetitive Answers:
+**Repetitive Answers:**
 
 ![alt text](https://github.com/ch22group16/capstone-GenAI/blob/main/Human_Validation_Question_Answering/ZeroShotTesting.png)
 
